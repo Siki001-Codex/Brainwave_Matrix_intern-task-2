@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple E-Commerce Store</title>
+    <link rel="Icon" href="logo.jpeg">
+    <link rel="stylesheet" href="Sixtus.css">
+</head>
+<body>
+    <header>
+        <h1>Sixtus' Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="products-container">
+            <div class="product-card">
+                <img src="Perfume.webp" alt="Product 1">
+                <h3>Perfume</h3>
+                <p>$19.99</p>
+                <button class="add-to-cart" data-name="Product 1" data-price="19.99">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Sneaker.webp" alt="Product 2">
+                <h3>Sneakers</h3>
+                <p>$29.99</p>
+                <button class="add-to-cart" data-name="Product 2" data-price="29.99">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Giftcard.jpeg" alt="Product 3">
+                <h3>Giftcard</h3>
+                <p>$9.99</p>
+                <button class="add-to-cart" data-name="Product 3" 
+                data-price="9.99">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Laptop.jpeg" alt="Product 4">
+                <h3>Laptop</h3>
+                <p>$39.99</p>
+                <button class="add-to-cart" data-name="Product 4"
+                 data-price="39.99">Add to Cart</button>
+                 </div>
+            <div class="product-card">
+                <img src="Phone.JPG" alt="Product 5">
+                <h3>Samsung A02</h3>
+                <p>$49.99</p>
+                <button class="add-to-cart" data-name="Product 5" 
+                data-price="49.99">Add to Cart</button>
+                </div>
+            <div class="product-card">
+                <img src="Jacket.jpeg" alt="Product 6">
+                <h3>Jacket</h3>
+                <p>$9.99</p>
+                <button class="add-to-cart" data-name="Product 6" 
+                data-price="9.99">Add to Cart</button>
+                </div>          
+            <div class="product-card">
+                <img src="Luggages.jpg" alt="Product 6">
+                <h3>Luggages</h3>
+                <p>$18.99</p>
+                <button class="add-to-cart" data-name="Product 7" 
+                data-price="18.99">Add to Cart</button>
+                </div>          
+        <div class="cart-modal" id="cart-modal">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items">
+                </ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button id="checkout-btn">Checkout</button>
+            <button id="close-cart-btn">Close Cart</button>
+        </div>
+    </main>
+    <article id="Contact">
+        <h2>Register</h2>
+          
+        <form action="http://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>Personal Info</legend>
+          <p>
+          <label for="Firstname">First Name:</label>
+          <Input type="text" name="Firstname"
+          id="Firstname" placeholder="Sixtus" autocomplete="on"
+          required autofocus>
+        </p>
+        <p>
+          <label for="LastName">Last Name:</label>
+          <Input type="text" name="Lastname"
+          id="Lastname" placeholder="Chidera" autocomplete="on"
+          required> 
+          </p>
+          <p>
+          <label for="Password">Password:</label>
+          <Input type="password" name="Password"
+          id="Password" placeholder="Your Secret"
+          required> 
+        </p>
+          <p>
+          <label for="Phone">Phone:</label>
+          <Input type="tel" name="Phone"
+          id="Phone" placeholder="9069935434" 
+          pattern="[0-9]{3}[0-9]{3}[0-9]{4}"required>
+         </p>
+          <p>
+            <label for="decade">Mail:</label>
+            <Input type="mail" name="decade" id="mail"
+            placeholder="mail">
+         </p>
+         <button type="submit">Submit</button>
+         <button type="reset">Reset</button>
+         <br>       
+         
+    <footer>
+      <p>&copy; 2025 My Simple Store</p>
+    </footer>
+
+    <script src="Sixtus.js"></script>
+</body>
+</html>
